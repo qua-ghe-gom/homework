@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+   function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("srchtml");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("srchtml");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tài liệu lớp 11b8</title>
+    <style>
+      
+      br {
+         content: "";
+         margin: 2em;
+         display: block;
+         font-size: 24%;
+      }
+      a{
+         text-decoration: none;
+      }
+      #b:hover{
+         color: black;
+         background-color: pink;
+         border-radius:10%;
+      }
+      br {
+         content: "";
+         margin: 2em;
+         display: block;
+         font-size: 24%;
+      }
+      .font{
+         font-size: 45px;
+         color: white;
+         font-family: "Times New Roman";
+         text-align: center;
+      }
+      .fontp{
+         font-size: 25px;
+         color: white;
+         font-family: "Times New Roman";
+         text-align: center;
+      }
+      p{
+         color: white;
+      }
+      .img2{
+        width: 100%;
+        height: 100%;
+      
+      } 
+
+    </style>
+
+</head>
+
+<body>
+<!-- link code trên github -->
+<div srchtml="https://raw.githubusercontent.com/qua-ghe-gom/homeword/main/menu.html"></div> 
+<script>
+includeHTML();
+</script>
+
+   
+<p style="font-size: 10px;">nếu vào menu không được thì reset trang lại.</p>
+<p class="fontp">tìm TXĐ</p><br>
+<img class="img2" src="math/tapxacdinh.jpeg" >
+<br>
+<p class="fontp">tìm GTNN,GTLN.</p>
+
+<img class="img2" src="math/gtln1.jpeg" >
+<br>
+
+<img class="img2" src="math/gtln2.jpeg" >
+<br>
+
+<p class="fontp">công thức phụ nhau,làm mất trừ</p>
+<img class="img2" src="math/2 goc phu nhau va lam mat tru.jpg" >
+<br>
+
+<p class="fontp">hạ bậc</p>
+<img class="img2" src="math/ct ha bac.jpg" >
+<br>
+
+
+<p class="fontp">các phương trình lượng giác cơ bản</p>
+<img class="img2" src="math/sin1.jpg" ><br>
+<img class="img2" src="math/sin2.jpg" ><br>
+<img class="img2" src="math/cos.jpg" ><br>
+<img class="img2" src="math/tan.jpg" ><br>
+<img class="img2" src="math/cot1.jpg" ><br>
+<img class="img2" src="math/cot2.jpg" ><br>
+
+<p class="fontp">cách làm trị tuyệt đối cho gọn</p>
+<img class="img2" src="math/congthucgigido.png" ><br>
+<p class="fontp">công thức đổi tráo sin với cos</p>
+<img class="img2" src="math/ctdoisincos.png" ><br>
+<p class="fontp">công thức tách số trong sin với cos</p>
+<img class="img2" src="math/ cttachso.png" ><br>
+<p class="fontp">các phương trình lượng giác thường gặp</p>
+<img class="img2" src="math/ptlg1.png" ><br>
+<img class="img2" src="math/ptlg2.png" ><br>
+<img class="img2" src="math/ptlg2,1.jpeg" ><br>
+<img class="img2" src="math/ptlg2,2.png" ><br>
+<img class="img2" src="math/vdptlg.jpeg" ><br>
+<p class="fontp">các bài tập ví dụ về phương trình lượng giác</p>
+<img class="img2" src="math/btptlg1.jpeg" >
+<img class="img2" src="math/btptlg2.jpeg" >
+<img class="img2" src="math/btptlg3.jpeg" >
+<p class="fontp">cách chia 2 vế cho cos u khi u khác và bài tập ví dụ</p>
+<img class="img2" src="math/khicosukhac.jpeg" >
+<img class="img2" src="math/vdcosu1.jpeg" >
+<img class="img2" src="math/vdcosu2.jpeg" >
+<img class="img2" src="math/vdcosu3.jpeg" >
+
+
+
+
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./code.js"></script>
+</body>
+</html>
