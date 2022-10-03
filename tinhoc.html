@@ -76,41 +76,11 @@
         height: 100%;
       
       } 
-      /* css của nút coppy */
-    </style>
+      </style>
 
 </head>
 
 <body>
-<!-- link code trên github -->
-<div srchtml="https://raw.githubusercontent.com/qua-ghe-gom/homework/main/menu.html"></div> 
-<script>
-includeHTML();
-</script>
-
-
-/* <!-- nút coppy --> */
-<section id="myInput">bài 1 
-   a=15
-   b=8
-   print("a+b=",a+b)
-   print("a-b=",a-b)
-   print("a*b=",a*b)
-   print("a/b=",a/b)
-   bài 2
-   x=int(input("nhập x: "))
-   print("x^2 là: ",x**2)
-   bài 3
-   ten=str(input("nhập họ và tên: "))
-   print("tên của bạn là: ",ten.upper())
-</section>
-
-<section class="tooltip"  style="text-align: center;">
-  <button onclick="myFunction()">
-    <span class="tooltiptext" id="myTooltip"></span>
-    Copy
-  </button>
-</section>
 
 <p class="fontp">bài tập về nhà</p>
 <p class="fontp">bài 1</p>
@@ -130,21 +100,5 @@ includeHTML();
 
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./code.js"></script>
-    <script>
-      function myFunction() {
-    var copyText = document.getElementById("myInput");
-    var input=document.createElement("INPUT");
-    document.body.appendChild(input);
-    input.value=copyText.innerHTML;
-    input.select();
-    input.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    document.body.removeChild(input);
-    
-    var tooltip = document.getElementById("myTooltip");
-    tooltip.style.display='block';
-    tooltip.innerHTML = "Đã copy";
-  }
-    </script>
 </body>
 </html>
