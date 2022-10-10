@@ -257,28 +257,47 @@ includeHTML();
 <p class="fontp">bài tập về nhà</p>
 
 <!-- đặt văn bản trong phần này nè -->
-<pre style="color: white;background-color: #000;"><code>#bài 1
-a=int(input("nhập a: "))
-b=int(input("nhập b: "))
-print("kết quả của a+b=",a+b)
-print("kết quả của a-b=",a-b)
-print("kết quả của a*b=",a*b)
-print("kết quả của a/b=",a/b)
-#bài 2
-x=int(input("nhập x: "))
-print("x^2 là: ",x**2)
-#bài 3
-ten=str(input("nhập họ và tên: "))
-print("tên của bạn là: ",ten.upper())
+<pre style="color: white;background-color: #000;"><code>#bài tính điểm trung bình khi nhập điểm
+#dạng cơ bản
+toan=float(input("nhập điểm toán: "))
+ly=float(input("nhập điểm lý: "))
+hoa=float(input("nhập điểm hoá: "))
+print("điểm trung bình môn của toán lý hoá là: ",(toan*2+ly+hoa)/4)
 </code></pre>
 <!-- đặt văn bản trong phần này nè -->
 
+<!-- đặt văn bản trong phần này nè -->
+<pre style="color: white;background-color: #000;"><code>#bài tính điểm trung bình khi nhập điểm
+#dạng nâng cao(hiểu thì làm k hiểu thì làm)
+try:
+    def diemtrungbinh(toan,ly,hoa):
+        if (toan>10 or ly >10 or hoa>10):
+            print("vui lòng nhập điểm dưới 10")
+        elif (toan<0 or ly <0 or hoa<0):
+            print("điểm không được là số âm")
+        else:
+            print("điểm trung bình môn của toán lý hoá là: ",(toan*2+ly+hoa)/4)
+    toan=float(input("nhập điểm toán: "))
+    ly=float(input("nhập điểm lý: "))
+    hoa=float(input("nhập điểm hoá: "))
+    diemtrungbinh(toan,ly,hoa)
+except :
+    print("vui lòng nhập số")
+</code></pre>
+<!-- đặt văn bản trong phần này nè -->
+   
+
+
+
 <p class="fontp">link online-python.com có code sẵn r nên k cần sao chép</p>
-<p class="fontp">muốn test đoạn code thì ấn nút sao chéo rồi vào link dưới đây paste ra chạy thử.</div></p>
-<a href="https://www.onlinegdb.com/online_python_compiler" target="_blank" ><button class="btn fifth">onlinegdb.com</button></a>
-<br>
-<p class="fontp">nếu link trên k không cho paste ra thì vào link này</p> 
-<a href="https://www.online-python.com/DeQ6tMxRfz" target="_blank" ><button class="btn fifth">online-python.com</button></a>
+<p class="fontp">dạng cơ bản và dạng nâng cao</p> 
+<a href="https://www.online-python.com/FKvw298CWb" target="_blank" ><button class="btn fifth">online-python.com(cơ bản)</button></a>
+
+<a href="https://www.online-python.com/ovuB1EiXLS" target="_blank" ><button class="btn fifth">online-python.com(nâng cao)</button></a>
+
+
+
+
 
 <!-- ảnh động -->
 <div>
