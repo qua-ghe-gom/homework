@@ -269,20 +269,20 @@ print("điểm trung bình môn của toán lý hoá là: ",(toan*2+ly+hoa)/4)
 <!-- đặt văn bản trong phần này nè -->
 <pre style="color: white;background-color: #000;"><code>#bài tính điểm trung bình khi nhập điểm
 #dạng nâng cao(hiểu thì làm k hiểu thì làm)
-try:
-    def diemtrungbinh(toan,ly,hoa):
+while True:
+    try:
+        toan=float(input("nhập điểm toán: "))
+        ly=float(input("nhập điểm lý: "))
+        hoa=float(input("nhập điểm hoá: "))
         if (toan>10 or ly >10 or hoa>10):
             print("vui lòng nhập điểm dưới 10")
         elif (toan<0 or ly <0 or hoa<0):
             print("điểm không được là số âm")
         else:
             print("điểm trung bình môn của toán lý hoá là: ",(toan*2+ly+hoa)/4)
-    toan=float(input("nhập điểm toán: "))
-    ly=float(input("nhập điểm lý: "))
-    hoa=float(input("nhập điểm hoá: "))
-    diemtrungbinh(toan,ly,hoa)
-except :
-    print("vui lòng nhập số")
+            break
+    except :
+        print("vui lòng nhập số")
 </code></pre>
 <!-- đặt văn bản trong phần này nè -->
    
@@ -293,7 +293,7 @@ except :
 <p class="fontp">dạng cơ bản và dạng nâng cao</p> 
 <a href="https://www.online-python.com/FKvw298CWb" target="_blank" ><button class="btn fifth">online-python.com(cơ bản)</button></a>
 
-<a href="https://www.online-python.com/ovuB1EiXLS" target="_blank" ><button class="btn fifth">online-python.com(nâng cao)</button></a>
+<a href="https://www.online-python.com/KTe82yGsfh" target="_blank" ><button class="btn fifth">online-python.com(nâng cao)</button></a>
 
 
 
