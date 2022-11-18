@@ -33,6 +33,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>tài liệu lớp 11b8</title>
     <style>
       
@@ -64,13 +66,10 @@
       }
       .fontp{
          font-size: 25px;
-         color: white;
          font-family: "Times New Roman";
          text-align: center;
       }
-      p{
-         color: white;
-      }
+
       .img2{
         width: 100%;
         height: 100%;
@@ -96,6 +95,44 @@
          #myBtn:hover {
          background-color: #555;
       }
+      /* css xem thêm */
+      * {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: black;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        
+        .accordion-item.active .accordion-header {
+            background: white;
+            color: black;
+        }
+        
+        .arrow {
+            transition: all 0.3s;
+        }
+        
+        .accordion-item.active .arrow {
+            transform: rotate(180deg);
+        }
+        
+        .accordion-body {
+            padding: 10px 10px;
+            display: none;
+        }
     </style>
 
 </head>
@@ -112,43 +149,112 @@ includeHTML();
 
 
 
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">axit photphoric (h3po4)</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="./chemistry/lythuyet/h3p04-1.jpeg" >
+       </div>
+   </div>
+</div>
 
-<p class="fontp"></p>axit photphoric (h3po4)<br>
-<img class="img2" src="./chemistry/lythuyet/h3p04-1.jpeg" >
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">các dạng công thức hoá,bảng tuần hoàn</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="./chemistry/lythuyet/mol.png" >
 
-<p class="fontp">các dạng công thức hoá,bảng tuần hoàn</p><br>
-<img class="img2" src="./chemistry/lythuyet/mol.png" >
-<br>
-<img class="img2" src="./chemistry/lythuyet/bangtuanhoan.png" >
-<br>
-<p class="fontp">bảng tính tan trong pứ tđ ion</p><br>
-<img class="img2" src="./chemistry/lythuyet/bangtt.png" >
-<br>
-<p class="fontp">tính PH</p><br>
-<p class="font">pH = -log [ H+ ] </p><br>
-<p class="font">pH = 14 + lg([OH-])</p><br>
+         <img class="img2" src="./chemistry/lythuyet/bangtuanhoan.png" >
+       </div>
+   </div>
+</div>
 
-<p class="fontp">mẹo làm bài toán ion ngược</p><br>
-<img class="img2" src="./chemistry/lythuyet/meolamionnguoc.jpg" ><br>
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">bảng tính tan trong pứ tđ ion</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="./chemistry/lythuyet/bangtt.png" >
+       </div>
+   </div>
+</div>
 
-<p class="fontp">định luật bảo toàn điện tích.</p><br>
-<img class="img2" src="./chemistry/lythuyet/dlbtdt.jpeg" ><br>
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">tính PH</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <p class="font">pH = -log [ H+ ] </p>
+         <p class="font">pH = 14 + lg([OH-])</p>
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">cách làm bài toán ion ngược</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="./chemistry/lythuyet/meolamionnguoc.jpg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">định luật bảo toàn điện tích.</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="./chemistry/lythuyet/dlbtdt.jpeg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">cách làm bài tính ion khi có ph</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="./chemistry/lythuyet/ionkhibietph.jpeg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">môi trường dung dịch</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="./chemistry/lythuyet/moitruongdd.jpeg" >
+         <img class="img2" src="./chemistry/lythuyet/moitruongdd1.jpeg" >
+         <img class="img2" src="./chemistry/lythuyet/moitruongdd2.jpeg" >
+       </div>
+   </div>
+</div>
 
 
-<p class="fontp">cách làm bài tính ion khi có ph</p><br>
-<img class="img2" src="./chemistry/lythuyet/ionkhibietph.jpeg" ><br>
-
-
-<p class="fontp">môi trường dung dịch</p>
-<img class="img2" src="./chemistry/lythuyet/moitruongdd.jpeg" ><br>
-<img class="img2" src="./chemistry/lythuyet/moitruongdd1.jpeg" ><br>
-<img class="img2" src="./chemistry/lythuyet/moitruongdd2.jpeg" ><br>
-<br>
 
 
 
-<p class="fontp">bảng nhận biết chất(ở cuối trang lý thuyết của cô Hường)</p>
-<img class="img2" src="./chemistry/lythuyet/bangntb.jpg" ><br>
+
 
 
 
@@ -179,5 +285,14 @@ includeHTML();
 </script>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./code.js"></script>
+<script>
+   $(document).ready(function() {
+       $('.accordion-item.active .accordion-body').slideDown();
+       $('.accordion-header').click(function() {
+           $(this).parent().toggleClass('active');
+           $(this).parent().children('.accordion-body').slideToggle();
+       });
+   });
+</script>
 </body>
 </html>

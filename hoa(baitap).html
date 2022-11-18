@@ -33,7 +33,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>tài liệu lớp 11b8</title>
+    
     <style>
       
       br {
@@ -64,13 +67,10 @@
       }
       .fontp{
          font-size: 25px;
-         color: white;
          font-family: "Times New Roman";
          text-align: center;
       }
-      p{
-         color: white;
-      }
+
       .img2{
         width: 100%;
         height: 100%;
@@ -96,7 +96,44 @@
       #myBtn:hover {
       background-color: #555;
       }
-
+      /* css xem thêm */
+      * {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: black;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        
+        .accordion-item.active .accordion-header {
+            background: white;
+            color: black;
+        }
+        
+        .arrow {
+            transition: all 0.3s;
+        }
+        
+        .accordion-item.active .arrow {
+            transform: rotate(180deg);
+        }
+        
+        .accordion-body {
+            padding: 10px 10px;
+            display: none;
+        }
     </style>
 
 </head>
@@ -111,67 +148,176 @@ includeHTML();
    
 <p style="font-size: 10px;">nếu vào menu không được thì reset trang lại.</p>
 
-<p class="fontp">20/90 phương trình học kỳ 1</p><br>
-<img class="img2" src="chemistry/baitap/20:90.1.jpeg">
-<img class="img2" src="chemistry/baitap/20:90.2.jpeg">
-<br>
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">20/90 phương trình học kỳ 1</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="chemistry/baitap/20:90.1.jpeg">
+         <img class="img2" src="chemistry/baitap/20:90.2.jpeg">
+       </div>
+   </div>
+</div>
 
-<p class="fontp"></p>axit photphoric (h3po4)(bài tập ví dụ<br>
-<img class="img2" src="./chemistry/baitap/h3po4-2.jpeg" >
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">axit photphoric (h3po4)(bài tập ví dụ)</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="./chemistry/baitap/h3po4-2.jpeg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">bài tập phương trình điện ly</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="chemistry/baitap/ptdl1.jpg" >
+         <img class="img2" src="chemistry/baitap/ptdl2.jpg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">bài tập tính độ PH</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="chemistry/baitap/tinhPH.jpg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">vài bài tập về phương trình điện ly</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="chemistry/baitap/ion1.jpeg" >
+         <img class="img2" src="chemistry/baitap/ion2.jpeg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">vài bài tập về định luật bảo toàn q</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="chemistry/baitap/dlbtdtvd1.jpeg" >
+         <img class="img2" src="chemistry/baitap/dlbtdtvd2.jpg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">sửa bài 16 trang mấy quên r</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="chemistry/baitap/suabai16.jpeg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">sửa bài tập trang 20</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="chemistry/baitap/baitaptrang20.jpg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">bài tập về nitơ</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="chemistry/baitap/btnito.jpeg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">bài toán nhận biết các chất mất nhãn</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="chemistry/baitap/nbchatmatnhan.jpeg" >
+         <img class="img2" src="chemistry/baitap/nbchatmatnhan1.jpeg" >
+         <img class="img2" src="chemistry/baitap/nbchatmatnhan2.jpeg" >
+         <img class="img2" src="chemistry/baitap/nbchatmatnhan3.jpeg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">6 phương trình (bắt buộc)</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="chemistry/baitap/6ptbatbouc.jpeg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">bài 9 axit nitric và muối nitrat</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="chemistry/baitap/ss9.jpg" >
+         <img class="img2" src="chemistry/baitap/ss9_1.jpeg" >
+         <img class="img2" src="chemistry/baitap/ss9_2.jpeg" >
+       </div>
+   </div>
+</div>
+
+<div class="accordion">
+   <div class="accordion-item">
+       <div class="accordion-header">
+         <p class="fontp">6 cặp phương trình (phần bài tập)</p>
+         <i class="arrow fas fa-chevron-down"></i>
+       </div>
+       <div class="accordion-body">
+         <img class="img2" src="chemistry/baitap/12pt.jpeg" >
+         <img class="img2" src="chemistry/baitap/12pt2.jpeg" >
+       </div>
+   </div>
+</div>
 
 
-<p class="fontp">bài tập phương trình điện ly</p><br>
-<img class="img2" src="chemistry/baitap/ptdl1.jpg" >
-<br>
-<img class="img2" src="chemistry/baitap/ptdl2.jpg" >
-<br>
-<p class="fontp">bài tập tính độ PH</p><br>
-<img class="img2" src="chemistry/baitap/tinhPH.jpg" >
-<br>
-<p class="fontp">vài bài tập về phương trình điện ly</p><br>
-<img class="img2" src="chemistry/baitap/ion1.jpeg" >
-<img class="img2" src="chemistry/baitap/ion2.jpeg" >
-<br>
-
-<p class="fontp">vài bài tập về định luật bảo toàn q</p><br>
-<img class="img2" src="chemistry/baitap/dlbtdtvd1.jpeg" >
-<img class="img2" src="chemistry/baitap/dlbtdtvd2.jpg" >
-<br>
-
-<p class="fontp">sửa bài 16 trang mấy quên r</p><br>
-<img class="img2" src="chemistry/baitap/suabai16.jpeg" >
-<br>
-<p class="fontp">sửa bài tập trang 20</p><br>
-<img class="img2" src="chemistry/baitap/baitaptrang20.jpg" >
-<br>
 
 
-<p class="fontp">bài tập về nitơ</p><br>
 
-<img class="img2" src="chemistry/baitap/btnito.jpeg" >
-
-<br>
-
-<p class="fontp">bài toán nhận biết các chất mất nhãn</p>
-<img class="img2" src="chemistry/baitap/nbchatmatnhan.jpeg" >
-<img class="img2" src="chemistry/baitap/nbchatmatnhan1.jpeg" >
-<img class="img2" src="chemistry/baitap/nbchatmatnhan2.jpeg" >
-<img class="img2" src="chemistry/baitap/nbchatmatnhan3.jpeg" >
-
-<p class="fontp">6 phương trình (bắt buộc)</p>
-<img class="img2" src="chemistry/baitap/6ptbatbouc.jpeg" >
-
-<p class="fontp">bài 9 axit nitric và muối nitrat</p><br>
-<img class="img2" src="chemistry/baitap/ss9.jpg" >
-<img class="img2" src="chemistry/baitap/ss9_1.jpeg" >
-<img class="img2" src="chemistry/baitap/ss9_2.jpeg" >
-<br>
-
-
-<p class="fontp">6 cặp phương trình (phần bài tập)</p><br>
-<img class="img2" src="chemistry/baitap/12pt.jpeg" >
-<img class="img2" src="chemistry/baitap/12pt2.jpeg" >
-<br>
 
 
 <!-- back to top -->
@@ -198,5 +344,14 @@ includeHTML();
 
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./code.js"></script>
+<script>
+   $(document).ready(function() {
+       $('.accordion-item.active .accordion-body').slideDown();
+       $('.accordion-header').click(function() {
+           $(this).parent().toggleClass('active');
+           $(this).parent().children('.accordion-body').slideToggle();
+       });
+   });
+</script>
 </body>
 </html>
